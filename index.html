@@ -13,6 +13,9 @@
 
     <style>
         #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #1918b6; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+        html, body {
+            background: #1918b6
+        }
         h1 {
             color: white;
         }
@@ -30,14 +33,21 @@
                 <h1>sterlingbeason.github.io</h1>
             </div>
         </div>
+
         <div class="row">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">MSDS 6306: Case Study 1</h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-graduation-cap"></i> Education</h6>
-                    <p class="card-text">MSDS 6306 (Doing Data Science): Case Study 1 by Sterling Beason and Ike Nwaogu</p>
-                    <a href="https://github.com/sterlingbeason/MSDS-6306-Case-Study-1" class="card-link">Repository</a>
-                    <a href="./docs/smu/MSDS_6306_Case_Study_1_Final_Report.html" class="card-link">Final Report</a>
+            <div class="col-md-auto mb-4">
+                <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="sterlingbeason"><a class="LI-simple-link" href='https://www.linkedin.com/in/sterlingbeason?trk=profile-badge'>Sterling Beason</a></div>
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">MSDS 6306: Case Study 1</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-graduation-cap"></i> Education</h6>
+                        <p class="card-text">MSDS 6306 (Doing Data Science): Case Study 1 by Sterling Beason and Ike Nwaogu</p>
+                        <a href="https://github.com/sterlingbeason/MSDS-6306-Case-Study-1" class="card-link"><i class="fab fa-github"></i></a>
+                        <a href="./docs/smu/MSDS_6306_Case_Study_1_Final_Report.html" class="card-link">Final Report</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,6 +55,8 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
     <script>
         particlesJS.load('particles-js', 'particles.json', function() {
