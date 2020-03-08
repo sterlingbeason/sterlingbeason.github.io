@@ -13,6 +13,9 @@
                 margin: 0 auto;
                 max-width: 650px;
             }
+            .test-container {
+                font-size: 20px;
+            }
             .test-address {
                 position: relative;
                 margin-bottom: 4.2rem;
@@ -21,7 +24,7 @@
                 position: absolute;
                 top: 2rem;
                 left: 0;
-                width: 370px;
+                width: 470px;
                 height: 1rem;
                 max-height: 1rem;
                 box-sizing: border-box;
@@ -32,11 +35,12 @@
                 color: red;
                 text-align: center;
                 content: 'plain-text address';
+                font-size: 16px;
             }
             .test-address::after {
                 position: absolute;
                 top: 2rem;
-                left: 375px;
+                left: 475px;
                 width: 3rem;
                 height: 1rem;
                 max-height: 1rem;
@@ -48,7 +52,17 @@
                 color: red;
                 text-align: center;
                 content: 'options';
+                font-size: 16px;
             }
+
+            .test-address.test-cash-account::before {
+                width: 160px;
+            }
+
+            .test-address.test-cash-account::after {
+                left: 165px;
+            }
+
             div#project-branding {
                 margin-bottom: 3rem;
                 font-family: Arial, Helvetica, sans-serif;
@@ -69,10 +83,13 @@
             </div>
             <h1>Install Complete!</h1>
             <h2>Testing Below</h2>
-            <p>Snappy Cash has been installed. Below is a plain-text Bitcoin Cash address for testing and tipping purposes. Tipping options should appear to the right of the address, if the browser extension is working properly.</p>
-            <p class="test-address">bitcoincash:qqxgjv4erfayzegy3h9p7dv4jja3jf6cs5ygtgk7tr</p>
+            <div class="test-container">
+                <p>Snappy Cash has been installed. Below is a plain-text Bitcoin Cash address for testing and tipping purposes. Tipping options should appear to the right of the address, if the browser extension is working properly.</p>
+                <p class="test-address">bitcoincash:qqxgjv4erfayzegy3h9p7dv4jja3jf6cs5ygtgk7tr</p>
+                <p class="test-address test-cash-account">SnappyCash#61881</p>
+            </div>
             <h3>If the options are visible and function properly, then install was successful! If not, please open a GitHub issue.</h3>
-            <p>NOTES: (2019-05-21) This extension is currently experimental. If you notice any performance issues when browsing, please toggle off the automatic conversion setting. Additionally, please leave any relevant information regarding a problem in a GitHub issue. </p>
+            <p>NOTES: (2019-05-21; Updated: 2020-03-08) This extension is currently experimental. If you notice any performance issues when browsing, please toggle off the automatic conversion setting. Additionally, please leave any relevant information regarding a problem in a GitHub issue. </p>
         </main>
     </body>
 </html>
